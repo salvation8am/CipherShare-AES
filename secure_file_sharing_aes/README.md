@@ -64,3 +64,23 @@ Tests cover registration, logins, file encryption/decryption, sharing, permissio
 ## Dissertation alignment
 
 The app implements Chapter Three's user registration, login, role authorization, file upload, AES encryption, storage, sharing, download/decryption, and administration. Use screenshots of **your actual running copy** and results from **your own tests** when revising Chapter Four. Do not treat interface mockups or standalone cipher benchmarks as application-level proof.
+
+# CipherShare
+Secure file sharing web app using AES encryption.
+
+## Features
+- User registration and login
+- AES-encrypted file upload and download
+- Share and revoke file access
+- Admin panel
+
+## Setup
+pip install -r requirements.txt
+python create_admin.py
+python app.py
+
+## Tests
+pytest
+
+## Tech
+Python, Flask, SQLite, AES
