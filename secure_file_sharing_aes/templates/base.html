@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} | CipherShare AES</title><link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"></head>
+<body><header class="topbar"><div class="navwrap"><a class="brand" href="{{ url_for('index') }}"><span class="brandicon">◆</span> CipherShare <small>AES-256-GCM</small></a><nav>
+{% if current_user %}<span class="muted">{{ current_user['username'] }} · {{ current_user['role'] }}</span><a href="{{ url_for('dashboard') }}">My Files</a>{% if current_user['role']=='admin' %}<a href="{{ url_for('admin') }}">Administration</a>{% endif %}<form method="post" action="{{ url_for('logout') }}" class="inline"><input type="hidden" name="csrf" value="{{ csrf_token }}"><button type="submit" class="linkbutton">Log out</button></form>
+{% else %}<a href="{{ url_for('login') }}">Login</a><a href="{{ url_for('register') }}">Register</a>{% endif %}</nav></div></header>
+<main class="container">{% for category,msg in get_flashed_messages(with_categories=true) %}<div class="alert {{ category }}" role="alert">{{ msg }}</div>{% endfor %}{% block content %}{% endblock %}</main>
+<footer>Academic secure file sharing prototype · Encrypted at rest · Access-controlled retrieval</footer></body></html>

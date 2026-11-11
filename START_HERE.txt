@@ -1,0 +1,17 @@
+SECURE FILE SHARING SYSTEM WITH AES ENCRYPTION - RESEARCH PROJECT
+
+1. Download and extract this ZIP. Open the secure_file_sharing_aes folder.
+2. Install Python from https://www.python.org/downloads/windows/ if needed.
+   During installation, enable 'Add python.exe to PATH' if displayed.
+3. Double-click INSTALL_AND_RUN_WINDOWS.bat.
+4. Allow the package installation. Internet is needed for this first setup.
+5. Choose Y to create an administrator and provide a strong password.
+6. Open http://127.0.0.1:5000 in your browser.
+7. Register two ordinary accounts to demonstrate secure file sharing.
+8. For your project defence, take screenshots from the actual running app.
+
+If double-clicking does not work: open Command Prompt from the inner folder
+and run INSTALL_AND_RUN_WINDOWS.bat, then photograph any error.
+
+SAFETY: Academic/local demonstration only. Never upload real confidential data.
+Do not send anyone the 'instance' folder, which contains secret encryption keys.
