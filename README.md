@@ -4,7 +4,7 @@ A **working academic prototype** implementing the research project's ten functio
 
 ## Windows installation (Python 3.10+)
 
-1. Extract this ZIP to a folder, e.g. `Documents\CipherShare`.
+git clone https://github.com/salvation8am/CipherShare-AES.git
 2. Open Command Prompt in the extracted folder.
 3. Run:
 
