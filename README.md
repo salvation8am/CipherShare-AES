@@ -4,10 +4,15 @@ A **working academic prototype** implementing the research project's ten functio
 
 ## Windows installation (Python 3.10+)
 
-git clone https://github.com/salvation8am/CipherShare-AES.git
-2. Open Command Prompt in the extracted folder.
-3. Run:
+1. Clone the project and open its folder:
 
+```bat
+git clone https://github.com/salvation8am/CipherShare-AES.git
+cd CipherShare-AES\secure_file_sharing_aes
+```
+
+2. Run:
+   
 ```bat
 py -m venv .venv
 .venv\Scripts\activate
